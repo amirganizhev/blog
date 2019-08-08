@@ -2,14 +2,37 @@
 {%block content%}
 {% if object_list%}
 {%for news in object_list %}
-<a href="{{news.name}}">{{news.name}}</a>
+
+<div class="card border-primary mb-3" style="max-width: 95rem;">
+  <div class="card-body text-primary">
+    <div class="text-center">
+<h1><a href="{{news.name}}">{{news.name}}</a></h1>
+      </div>
+  </div>
+</div>
+
+
 {%endfor%}
 {%endif%}
 {% if object.name%}
-{{object.name}}
+
+
+<div class="card" style="width: 95rem;">
+  <div class="card-body">
+    <p class="card-text text-center">
+<h2 class="text-center">{{object.name}}</h2>
+    </p>
+    <p class="card-text text-center">
 <br>{{ object.body }}
+    </p>
+    <p class="card-text font-italic text-center">
 <br>{{ object.date_create }}
+    </p>
+  </div>
 <img src="/media/{{object.image}}">
+</div>
+
+
 {%endif%}
 {% endblock%}
 
