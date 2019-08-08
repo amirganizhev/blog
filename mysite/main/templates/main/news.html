@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>All news</title>
-</head>
-<body>
+{% if object_list%}
 {%for news in object_list %}
-<h1>{{news.name}}</h1>
-
+<a href="{{news.name}}">{{news.name}}</a>
 {%endfor%}
+{%endif%}
+{% if object.name%}
+{{object.name}}
+<br>{{ object.body }}
+<br>{{ object.date_create }}
+<img src="/media/{{object.image}}">
+{%endif%}
 
-</body>
-</html>
+

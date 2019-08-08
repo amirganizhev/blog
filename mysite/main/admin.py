@@ -1,4 +1,6 @@
 from django.contrib import admin
-from .models import News_pages
+
+from .models import NewsPages
+
 # Register your models here.
-admin.site.register(News_pages)
+admin.site.register(NewsPages)
