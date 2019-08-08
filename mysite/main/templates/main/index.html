@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-widht, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Сайт про аквариум</title>
+    <title>Новостной юлог</title>
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> <!--Подключение bootstrap-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!--Подключение jquery-->
@@ -13,33 +13,47 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <!--Подключение js от bootstrap-->
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> <!--Подключение иконок-->
-    <link rel="stylesheet" href="#"> <!--Подключение css из папки-->
+    <link rel="stylesheet" href="/mysite/main/static/mainstyle.css"> <!--Подключение css из папки-->
 </head>
 
 <body>
-<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar"> <!--Создание навигационной панели-->
-    <div class="container">
-        <a href=# class="navbar-brand waves-effect">
-            <strong class="blue-text">Rostov-times</strong>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarContent"> <!--Создание кнопки адаптивного меню-->
-            <span class="navbar-toggler-icon"></span> <!--Иконка для кнопки адаптивного меню-->
-        </button> <!--Конец создание кнопки адаптивного меню-->
-        <div class="collapse navbar-collapse" id="navbarContent"> <!--Создание самого адаптивного меню-->
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a href="#" class="nav-link waves-effect">Главная</a>
-                </li>
-                <li class="nav-item">
-                    <a href="news/" class="nav-link waves-effect">Новости</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link waves-effect">О нас</a>
-                </li>
-            </ul>
-        </div> <!--Конец создания адаптивного меню-->
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <h5 class="my-0 mr-md-auto font-weight-normal">Rostow-times</h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark active" href="">Главная</a>
+        <a class="p-2 text-dark" href="/news">Новости</a>
+    </nav>
+</div>
+
+<div class="row jumbotron">
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10"> <!--Текст-->
+        <p class="lead text-center" class="repack">Первый запуск аквариума требует ответственной подготовки.
+            ля начала нужно изучить информацию и приобрести нужное оборудование.
+            Перед запуском вы уже должны понимать, какие обитатели будут населять
+            аквариум и сколько места им нужно. Исходя из этого подбирается форма и
+            размер аквариума, а потом всё остальное оборудование: фильтры, лампы, термометры,
+            нагреватель, компрессор. А также фон и декорации (по желанию). Они должны соответствовать
+            характеристикам аквариума, количеству и потребностям его обитателей.</p>
     </div>
-</nav> <!--Конец создания навигационной панели-->
+</div>
+
+<footer class="page-footer font-small blue pt-4"> <!--Футер сайта-->
+    <div class="container-fluid">
+      <div class="row padding text-center">
+        <div class="col-12">
+          <h2>Наши контакты</h2>
+        </div>
+        <div class="col-12 social padding">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-google-plus-g"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer> <!--Конец футера сайта-->
+
+
 </body>
 </html>
