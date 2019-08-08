@@ -1,3 +1,5 @@
+{%extends "/home/worlak/PycharmProjects/blog/mysite/main/templates/main/icnlude/navbar.html" %}
+{%block content%}
 {% if object_list%}
 {%for news in object_list %}
 <a href="{{news.name}}">{{news.name}}</a>
@@ -9,5 +11,6 @@
 <br>{{ object.date_create }}
 <img src="/media/{{object.image}}">
 {%endif%}
+{% endblock%}
 
 
